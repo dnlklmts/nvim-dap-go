@@ -159,7 +159,6 @@ function M.debug_test()
 
     local msg = string.format("starting debug session '%s : %s'...", test.package, test.name)
     vim.notify(msg)
-    vim.notify(test.args[3] .. test.args[4], vim.log.levels.DEBUG, nil)
     debug_test(test.name, test.package, test.args, M.test_buildflags)
 
     return true
