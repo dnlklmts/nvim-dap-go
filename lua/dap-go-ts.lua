@@ -178,7 +178,7 @@ local function get_params(testname)
         name = get_testcase().name
         local suite = get_testcase().suite
         test_args = {
-            "-test.timeout 12", "30s",
+            "-test.timeout", "30s",
             "-test.run", "^" .. suite .. "$",
             "-testify.m", "^(" .. name .. ")$",
         }
